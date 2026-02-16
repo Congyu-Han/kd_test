@@ -75,3 +75,15 @@ model RolePermission {
   @@index([roleId])
   @@index([permissionId])
 }
+
+model PaymentCallback {
+  id        String   @id @default(cuid())
+  channel   String
+  tradeNo   String
+  orderId   String
+  amount    Decimal
+  createdAt DateTime @default(now())
+
+  @@unique([channel, tradeNo])
+  @@index([tradeNo])
+}
