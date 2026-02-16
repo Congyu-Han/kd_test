@@ -26,3 +26,5 @@ jobs:
         run: pnpm test
       - name: Phase1 Gate
         run: bash scripts/verify-phase1.sh
+      - name: Phase2 Gate
+        run: bash scripts/verify-phase2.sh
