@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "dev:link": "pnpm --parallel --filter @kds/api --filter @kds/web run dev"
   }
 }

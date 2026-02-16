@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "lint": "echo 'web lint placeholder'",
+    "dev": "tsx src/server.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.8.2",
     "vitest": "^3.2.4"
   }
