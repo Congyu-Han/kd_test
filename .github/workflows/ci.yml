@@ -24,3 +24,5 @@ jobs:
         run: pnpm typecheck
       - name: Test
         run: pnpm test
+      - name: Phase1 Gate
+        run: bash scripts/verify-phase1.sh
